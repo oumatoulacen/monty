@@ -1,5 +1,7 @@
 #include "monty.h"
+#include <stdio.h>
 
+trans_t trans = {NULL, NULL, NULL, 0};
 
 /**
 * main - monty code interpreter
@@ -15,7 +17,6 @@ int main(int argc, char *argv[])
 	ssize_t read_line = 1;
 	stack_t *stack = NULL;
 	unsigned int counter = 0;
-	trans_t trans = {NULL, NULL, NULL, 0};
 
 	if (argc != 2)
 	{
